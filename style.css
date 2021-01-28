@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+  background-color: #0B131E;
+}
+
+.bg-dark {
+  background-color: #363F48!important;
+  /* overwrites bootstrap color */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: Assistant, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #FFFFFF!important;
+}
+
+@media (max-width: 320px) {
+  .navbar .navbar-brand, .navbar .navbar-brand img  {
+    width: 75%
+  }
+}      
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: gray!important;
+}
+
+.padding-x {
+  padding: 10px;
+}
+@media (min-width: 768px){
+  .padding-x {
+        padding-left: 100px;
+        padding-right: 100px;
+    }  
+}
+
+
+
+#chi-siamo {
+  min-height: 657px;
+  width: 100%;
+  margin-top: 70px;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  #chi-siamo img {
+    width: 100%;
+  }
+}
+
+#chi-siamo, #personalizzazione {
+  background: url(img/block1.png) #0B131E;
+}
+
+#innovazione {
+  min-height: 500px;
+  width: 100%;
+  border-radius: 0px;
+  background: url(img/block2-bg.png) #0B131E;
+  background-position: center;
+  background-size: cover;
+}
+
+.scopri {
+  background: #FF6A5C;
+  border: 1px solid #FF6A5C;
+  color: #ffff;
+  padding: 12px 38px;
+  text-transform: uppercase;
+  height: 45px;
+}
+
+#motto {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+  
+  color: #FF6A5C;
+}
+
+.block-title {
+  font-family: Assistant, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 52px;
+  color: #FFFFFF;
+}
+
+.element {
+  background: #111D2D;
+  width: 327px;
+  height: 327px;
+  margin: 3rem 1rem;
+  position: relative;
+}
+
+#prodotti .element img {
+  width: 100%;
+  position: relative;
+  top: -30%;
+}
+
+#prodotti .element span {
+  position: absolute;
+  left: 3rem;
+  bottom: 25%;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+button.arrow-next {
+  position: absolute;
+  top: 46%;
+  right: 0;
+  background: #FF6A5C;
+  height: 50px;
+  width: 50px;
+  padding: 15px 6px 22px;
+  border: 1px solid #FF6A5C;
+}
+
+button.arrow-prev {
+  position: absolute;
+  top: 46%;
+  left: 0;
+  background: #FF6A5C;
+  height: 50px;
+  width: 50px;
+  padding: 15px 6px 22px;
+  border: 1px solid #FF6A5C;
+  transform: scaleX(-1);
+}
+
+.line-orange, .line-orange-el, .line-orange-center {
+  display: flex;
+  flex-direction: column;
+}
+.line-orange::after, .line-orange-el::after , .line-orange-center::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  border: 2px solid #FF6A5C;
+  margin: 19px 0px 15px;
+}
+.line-orange-el::after {
+  position: absolute;
+  bottom: calc(25% - 35px);
+  left: 3rem;
+}
+.line-orange-center::after {
+  align-self: center;
+}
+
+#doss {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+#doss .element {
+  width: 328px;
+  height: 390px;
+  padding: 50px;
+  margin: 3rem 1rem 0 0;
+}
+
+#doss .element .title {
+  height: 31px;
+  top: calc(50% - 31px/2 + 27px);
+  font-family: Assistant, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FF6A5C;
+}
+
+#doss .element p {
+  height: 72px;
+  top: calc(50% - 72px/2 + 98.5px);
+  padding-right: 50px;
+  font-family: Assistant, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 1rem;
+  color: #FFFFFF;
+}
+
+#doss .element img {
+  margin-bottom: 1rem;
+  top: 35.86%;
+  bottom: 52.12%;
+}
